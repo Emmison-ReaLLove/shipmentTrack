@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>View Tracking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/5ccb0002ff.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/shipsphere-fav.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/shipsphere-touch-icon.png">
+  </head>
+  <body>
+
+    <div id="site-navbar"></div>
+
+    <section id="about" class="mt-5 py-5" style="background-color: #f3f3f3;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center align-items-center my-4 text-center">
+                        <h3 style="color: #1e2a34; font-weight: 700; font-size: 30px;">Your History Information</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-4 pb-3" style="border-bottom: 2px solid #051d2f;">
+                <img src="../images/shipsphere-icon.png" alt="ShipSphere Logistics" style="height: 70px; border-radius: 2px;">
+                <div style="font-weight: 700; font-size: 1.6rem; line-height: 1.1; margin-top: 8px;">
+                    <span style="color: #051d2f;">Ship</span><span style="color: #3b82f6;">Sphere</span>
+                </div>
+                <div style="color: #16a34a; font-weight: 600; font-size: 0.8rem; letter-spacing: 1px;">LOGISTICS &amp; SHIPPING COMPANY</div>
+                <div class="my-3">
+                    <svg id="barcode"></svg>
+                </div>
+                <div id="history-tn-label" style="font-weight: 600; letter-spacing: 2px;"></div>
+            </div>
+
+            <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date & Time</th>
+                                <th scope="col">Status of Item</th>
+                                <th scope="col">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody id="track-history-body">
+                        </tbody>
+                    </table>
+                </div>
+
+        </div>
+
+        <div class="text-center my-4 pt-4">
+            <div>
+                <button class="btn btn-secondary"><a href="fullview.html" id="history-back-link" class="text-white"> Back</a></button>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <a href="#" id="to-top" class="d-flex justify-content-center align-items-center to-top"> <i class="fa-solid fa-arrow-up"></i> </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.min.js"></script>
+    <script>const ASSET_PREFIX = "../";</script>
+    <script src="../js/partials.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/track.js"></script>
+    <script>
+      renderBackNavbar("../index.html");
+      renderFooter();
+      renderTrackHistory();
+    </script>
+
+    <script src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
