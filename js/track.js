@@ -118,22 +118,20 @@ function renderTrackFullView() {
   renderBarcodeHeader(shipment.tracking_number, "barcode-number");
 
   container.innerHTML = `
-    <tr>
-      <th scope="row">Tracking Number</th>
-      <td>
-        <span id="tracking-number-text">${escapeHTML(shipment.tracking_number)}</span>
-        <button type="button" class="btn btn-sm btn-outline-secondary ml-2" id="copy-tn-btn">Copy</button>
-      </td>
-    </tr>
+    <tr><th scope="row">Tracking Number</th><td>${escapeHTML(shipment.tracking_number)}</td></tr>
     <tr><th scope="row">Sender</th><td>${escapeHTML(shipment.sender)}</td></tr>
     <tr><th scope="row">Receiver Name</th><td>${escapeHTML(shipment.receiver_name)}</td></tr>
     <tr><th scope="row">Receiver Address</th><td>${escapeHTML(shipment.receiver_address)}</td></tr>
     <tr><th scope="row">Port of Origin</th><td>${escapeHTML(shipment.origin_port)}</td></tr>
     <tr><th scope="row">Port of Destination</th><td>${escapeHTML(shipment.destination_port)}</td></tr>
     <tr><th scope="row">Mode of Transport</th><td>${escapeHTML(shipment.transport)}</td></tr>
+    <tr><th scope="row">Product</th><td>${escapeHTML(shipment.product)}</td></tr>
     <tr><th scope="row">Quantity</th><td>${escapeHTML(shipment.quantity)}</td></tr>
     <tr><th scope="row">Weight</th><td>${escapeHTML(shipment.weight)}</td></tr>
     <tr><th scope="row">Status</th><td>${escapeHTML(shipment.status)}</td></tr>
+    <tr><th scope="row">Payment Method</th><td>${escapeHTML(shipment.payment_method)}</td></tr>
+    <tr><th scope="row">Picked-up Time</th><td>${escapeHTML(shipment.pickup_time)}</td></tr>
+    <tr><th scope="row">Departed Time</th><td>${escapeHTML(shipment.departure_time)}</td></tr>
     <tr><th scope="row">Estimated Delivery Date</th><td>${escapeHTML(shipment.delivery_date)}</td></tr>`;
 
   if (historyLink) {
