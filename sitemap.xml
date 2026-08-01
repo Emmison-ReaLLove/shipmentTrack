@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.com/index.html</loc>
+    <loc>https://logistics.shipsphere.it.com/index.html</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.com/about.html</loc>
+    <loc>https://logistics.shipsphere.it.com/about.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.com/services.html</loc>
+    <loc>https://logistics.shipsphere.it.com/services.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.com/services/air.html</loc>
+    <loc>https://logistics.shipsphere.it.com/services/air.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.com/services/ocean.html</loc>
+    <loc>https://logistics.shipsphere.it.com/services/ocean.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.com/services/cars.html</loc>
+    <loc>https://logistics.shipsphere.it.com/services/cars.html</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
