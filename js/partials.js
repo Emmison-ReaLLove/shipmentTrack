@@ -126,7 +126,7 @@ function renderFooter() {
 
     <section class="py-3 text-white" style="background-color: #193448;">
         <div class="text-center">
-            <span style="font-size: 15px;">ShipSphere Logistics Company LTD &copy; 2023. All rights reserved.</span>
+            <span style="font-size: 15px;">ShipSphere Logistics Company LTD &copy; 2026. All rights reserved.</span>
         </div>
     </section>`;
 
